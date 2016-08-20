@@ -385,12 +385,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 db.open();
                 dbarraylist = db.selectAllPersonList();
                 db.close();
-                for (int i = 0; i < dbarraylist.size(); i++) {
+                for (int i=0; i<dbarraylist.size(); i++) {
                     if ((dbarraylist.get(i).getKeyID().contains("Directory"))) { //삭제할 디렉토리 찾음
                         Log.e("디렉토리 삭제 검사부분 ", dbarraylist.get(i).getKeyID()); //여기 돌았다
-                        Log.e("삭제할 디렉토리 getName ", dbarraylist.get(i).getName()); //
+                        Log.e("검사하고있는 디렉토리 getName ", dbarraylist.get(i).getName()); //
+                        Log.e("현재인덱스", i+"");
 
                         if (dbarraylist.get(i).getName().equals(delname)) {
+                            dbPrint();
                             db.open();
                             db.delName(delname);//db에서 디렉토리 삭제
                             db.close();
@@ -417,10 +419,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                                 e.printStackTrace();
                             }
                             dbPrint();
+                            break;
                         }
+
                     }
-                    break;
+
                 }
+                Log.e("디렉토리 삭제 완료 ", "-----------------------------");
                 dbPrint();
                 Log.e("구분", "구분");
                 db.open();
