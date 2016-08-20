@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#000000"
+        android:layout_marginBottom="10dp"
+        >
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:background="#c03a2c"
+        android:text="myRoom1"
+        android:textStyle="bold"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+        android:id="@+id/list_item_name"
+        />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="match_parent"
+        android:text="5기기 연결중"
+        android:id="@+id/list_item_info"
+        android:gravity="center"
+        android:background="#FFFFFF"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_next"
+            android:background="#FFFFFF"/>
+    </LinearLayout>
+
+</LinearLayout>

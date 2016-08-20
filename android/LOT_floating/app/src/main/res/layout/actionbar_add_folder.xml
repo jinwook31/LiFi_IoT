@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="end">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="10sp"
+        android:text="setting"
+        android:layout_marginLeft="250dp"
+        android:id="@+id/list_add_button"
+        android:onClick="onAddListButtonClick"
+        android:background="#00000000"
+        android:src="@drawable/ic_folder_open_35dp"
+        android:padding="0sp"
+        android:layout_gravity="end|center_vertical"
+        />
+
+</LinearLayout>
